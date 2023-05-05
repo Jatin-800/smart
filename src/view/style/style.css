@@ -1,0 +1,71 @@
+.logo{
+    font-size: 30px;
+}
+.cur{
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20%;
+}
+.cart{
+    width: 50px;
+    margin-right: 2%;
+}
+
+.section{
+    text-align:justify;
+    display: flex;
+    gap: 10%;
+}
+
+.sec1{
+    font-size: x-large;
+    margin-top: 2%;
+    margin-right: 10%;
+}
+.sec2{
+    height: 275px;
+    margin-top: 2%;
+    margin-bottom: 80px;
+    margin-left: 5%;
+
+}
+.sec3{
+    margin-top: 10%;
+    margin-left: 36%;
+    font-weight: bold;
+    
+}
+.sec4{width: 100%; height: 450px; background-color: rgb(85, 67, 163);position: relative; top: 50px;}
+.sec4-div{width: 45%; height: 85%; position: relative;margin: 30px; float: left;text-align: center;}
+.footer{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20%;
+    font-size: 30px;
+    color: white;
+}
+.about{
+    width: 100%;
+    opacity: .3;
+    color: rgb(13, 248, 248);
+}
+.m-5{
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+}
+.m-5:hover{
+    top: -10px;
+}
+.btn{
+    gap: 10px;
+}
+
+
+
+.oppo{text-align: left;}
+.oppo1{text-align: left;color: goldenrod;}
+.redmi{text-align: justify;}
+.vivo{text-decoration: none;color: aliceblue;text-align: left;}
+.vivo:hover{color: rgb(142, 142, 228);cursor: pointer;}
