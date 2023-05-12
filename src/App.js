@@ -15,26 +15,25 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useState} from "react";
 import './view/style/style.css'
+import Cart from "./view/screen/Cart";
 function App() {
   const[user,setUser]=useState();(localStorage.getItem('user'));
   console.log(localStorage.getItem('user'));
 
-  function logout(){
-    alert('logout')
-    localStorage.clear()
-  }
+  // function logout(){
+  //   alert('logout')
+  //   localStorage.clear()
+  // }
   return (
       
     <BrowserRouter>
      <Navbar bg="light" expand="lg">
       <Container fluid>
-        {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px',gap:'40px', fontSize:'25px' }}
-            navbarScroll>
+            style={{ maxHeight: '100px',gap:'40px', fontSize:'25px' }}>
             <Navbar.Brand href="#home" className="logo" style={{fontSize:'25px',fontFamily:'Franklin Gothic Medium, Arial Narrow, Arial, sans-serif',color:'orange',position:'relative',top:'5px'}} >SMART WATCH</Navbar.Brand>
             <Nav.Link href="/">Home</Nav.Link>
             {
@@ -44,42 +43,19 @@ function App() {
                 )
               })
             }
+             <Nav.Link href="/Cart">Cart</Nav.Link>
             <Nav.Link href="/register">Register</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
-            
-           
-           {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here 
-              </NavDropdown.Item>
-            </NavDropdown> */}
-            {/* <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link> */}
          </Nav>
-          {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search" />
-            <Button variant="outline-success">Search</Button>
-          </Form> */}
-         
-          {
+          {/* {
             shop.map(function(d){
               return(
-                <img src={d} className="cart"/>
+                <img src={d} className="cart"  onClick={()=>('/Cart')}/>
               )
             })
-          }
-          
-        <Button onClick={logout}>Log Out</Button>
+          } */}
+       {/* <Button onClick={logout}>Log Out</Button>
+         */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -88,6 +64,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/Product" element={<Product/>}/>
             <Route path="/About" element={<About/>}/>
+            <Route path="/Cart" element={<Cart/>}/>
             <Route path="/Details" element={<Details/>}/>
           
             {

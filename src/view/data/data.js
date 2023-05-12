@@ -2,7 +2,7 @@ export var menubar=["About","Product"]
 export var Banner=[require('../img/max.jpg'),require('../img/Apple.jpg'),require('../img/watch.png')]
 export var Description=[require('../img/desc.jpg')]
 export var section=[require('../img/smart.png')]
-export var shop=[require('../img/Cart.jpg')]
+export var shop=[require('../img/cart.jpg')]
 export var product=[
     {id:1,name:'beatXP Marv Raze with 1.96” HD Display Smart Watch with 60Hz Refresh Rate and Slim Bezels, One-Tap Bluetooth Calling, 24 * 7 Health Monitoring and 100+ Sports Modes (Black)', price:'₹999', mrp:'₹7,499',Image:require('../img/watch1.jpg')},
 
